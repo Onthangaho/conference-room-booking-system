@@ -1,46 +1,60 @@
-# Sprint 1 Daily Standups
+# Sprint 1 Daily Standups# Sprint 1 Daily Standups
 
-## Day 1 
-### Team Member Onthangaho Magoro 
-Yesterday: 
-- Defined booking data fields for room bookings.
-Today: 
-- Implement room availability validation logic.
-Blockers: 
-- None
+## Day 1
+Yesterday:
+- Planned sprint and clarified user stories.
 
-## Day 2 
-### Team Member : Onthangaho Magoro
-Yesterday: 
-- Implemented room availability validation logic
-Today: 
-- Create booking creation backend endpoint.
-Blockers: 
-- None
+Today:
+- Start booking logic (Onthangaho)
+- Start admin dashboard layout (Tshepiso)
 
-## Day 3 
-### Team Member : Onthangaho Magoro
-Yesterday: 
-- Created booking creation backend endpoint.
-Today: 
-- Build booking form UI with date and time selection
-Blockers: 
-- None
+Blockers:
+- None.
 
-## Day 4 
-### Team Member : Onthangaho Magoro
-Yesterday: 
-- Built booking form UI with date and time selection
-Today: 
-- Add validation error messages for invalid or unavailable booking
-Blockers: 
-- Needed to adjust validation logic slightly
+## Day 2
+Yesterday:
+- Booking availability validation completed.
+- Admin dashboard basic table created.
 
-## Day 5 
-### Team Member : Onthangaho Magoro
-Yesterday: 
-- Added validation error messages for invalid or unavailable booking
-Today: 
-- Begin persisting booking records.
-Blockers: 
-- None
+Today:
+- Build booking form UI (Rikhard)
+- Start room size filter logic (Emily)
+
+Blockers:
+- None.
+
+## Day 3
+Yesterday:
+- Booking form UI completed.
+- Room size filtering logic completed.
+
+Today:
+- Add validation error messages.
+- Test booking and filtering together.
+
+Blockers:
+- None.
+
+## Day 4
+Yesterday:
+- Validation messages added.
+- Booking flow tested successfully.
+
+Today:
+- Save bookings to database.
+- Improve admin dashboard data display.
+
+Blockers:
+- Minor validation logic adjustment needed.
+
+## Day 5
+Yesterday:
+- Booking persistence completed.
+- Admin dashboard shows booking list.
+
+Today:
+- Review completed stories.
+- Decide which stories to carry forward.
+
+Blockers:
+- None.
