@@ -1,5 +1,5 @@
 # Sprint 1 Planning Session 
-Date: [14/01/2026]
+Date: [15/01/2026]
 Sprint Goal: Enable employees and reception staff to book, manage, and view conference rooms without scheduling conflicts.
 
 ## Attendees 
@@ -7,8 +7,9 @@ Sprint Goal: Enable employees and reception staff to book, manage, and view conf
 - Scrum Master: Onthangaho Magoro
 - Development Team: Onthangaho Magoro
 
-## Velocity Target 
-Target velocity is 20 story points. As this is a solo project, actual delivery may vary depending on task complexity and dependency resolution.
+## Velocity Target
+The team targeted 20 story points for this sprint.
+This was an estimate based on team capacity and past planning discussions, not a guarantee.
 
 ## Selected User Stories 
 | Story # | Title                         | Story Points | 
@@ -29,7 +30,7 @@ Target velocity is 20 story points. As this is a solo project, actual delivery m
 ## Risks 
 | Risk                                         | Probability | Impact | Mitigation           | 
 | Core booking logic takes longer than expected| Medium      | High   |Focus on Story 1 first|
-| Working alone may slow progress              | Medium      | Medium |Do one story at a time|
+|  Parallel work causes merge issues           | Low         | Medium |Regular communication |
 
 
 ## Standup Cadence 
