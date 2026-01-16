@@ -3,22 +3,25 @@ Date [2026/01/14]
 
 
 ## Progress Snapshot
-- planned points: 21
-- Completed points: 0
-- In Progress : 3
-- Not Started : 18
-- Status: At risk
+- Planned points: 21
+- Completed points: 6
+- In progress: 8
+- Not started: 7
+- Status: On track
 
-## At risk work
-- Multiple sprint backlog stories are dependent on completion of core booking functionality.
-## Decisions taken
-- Continue focusing on completing Story 1 before starting any dependent stories.
-- Defer starting additional stories until booking persistence is complete.
+## At-Risk Work
+- Admin dashboard filtering may not finish in this sprint.
 
-# Blockers
-- resolved: Validation logic adjustment
-- outstanding: None
- 
+## Decisions Taken
+- Mark Story 1 and Story 3 as Done.
+- Keep Story 6 In Progress.
+- Do not start cancellation, equipment, or visitor bookings.
+
+## Blockers
+- Resolved:
+  - Validation logic inconsistency
+- Outstanding:
+  - None
 
 ## Team Health
-Progress is steady. Workload is manageable, but core features take time.
+Team collaboration is good. Parallel work helped speed up progress.
