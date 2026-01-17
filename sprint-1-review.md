@@ -1,24 +1,31 @@
 # Sprint 1 Review
 
+Date: 2026-01-16
+Sprint Goal: Allow employees to book meeting rooms without clashes and give admins visibility of bookings.
+
 ## Sprint Goal Outcome
-Partially met
+Partially Met
 
-## Completed Work
-| Story # | Acceptance Criteria Met                                    |
-|-------  |------------------------------------------------------------|
-| 1       | Booking creation, availability checks, validation messages |
-| 3       | Room size filtering, no-match message, input validation    |
+## Completed Stories
+| Story # | Outcome                                | Acceptance Criteria Met (Yes/No) |
+|---------|----------------------------------------|----------------------------------|
+| 1       | Booking feature implemented and usable | Yes                              |
+| 3 | Room size filtering completed                | Yes                              |
 
-## Incomplete Work
-| Story # | Reason                       | Next Action            |
-|---------|------------------------------|------------------------|
-| 6       | Admin filters not completed  | Carry over             |
-| 4       | Lower priority               | Carry over             |
-| 5       | Not started                  | Rewrite and carry over |
-| 8       | Not started | Carry over |
+## Incomplete Stories
+| Story # | Reason                             | Decision (Carry / Split / Drop) |
+|---------|------------------------------------|---------------------------------|
+| 4 | Lower priority compared to booking flow  | Carry                           |
+| 5 | Not started to protect sprint focus      | Split                           |
+| 6 | Admin filters not completed              | Carry                           |
+| 8 | Not started due to dependencies | Carry |
 
-## Sprint Metrics
-Planned points: 21  
-Completed points: 6  
-Actual velocity (after 5 days): 6
+## Stakeholder Feedback
+- Positive feedback:
+  - Booking flow is easy to use and solves double booking issues.
+- Concerns or questions:
+  - When will admin filtering be available?
+- Requests or adjustments:
+  - Improve admin controls and reporting in next sprint.
+
 
