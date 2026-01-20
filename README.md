@@ -1,20 +1,50 @@
 # 🏢 Conference Room Booking System
 
-This repository contains a practice project used to demonstrate professional Git, GitHub, and collaboration workflows.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Version](https://img.shields.io/badge/version-v1.0.0-blue.svg)
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
 
-The project simulates a **Conference Room Booking System** that will be expanded over multiple modules to support learning around documentation, APIs, teamwork, and system handover.
+## 📑 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Purpose of This Repository](#-purpose-of-this-repository)
+- [Repository Contents](#-repository-contents)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Contributing](#-contributing)
+- [Issue Tracking](#issue-tracking)
+- [Developer Onboarding (In Progress)](#developer-onboarding-in-progress)
+- [System Context](#system-context)
+- [Project Documentation](#project-documentation)
+- [Upcoming Documentation](#upcoming-documentation)
+- [Licence](#licence)
+- [Author](#-author)
+
+## Project Overview
+
+The Conference Room Booking System is a learning project used to practise professional
+software development workflows such as documentation, sprint planning, collaboration,
+and pull requests.
+
+The system is intended for employees, administrators, and facilities staff to manage
+conference room bookings, prevent scheduling conflicts, and monitor room usage.
+
+At this stage, the project focuses on process, planning, and communication rather than
+full system implementation.
 
 ---
 
 ## 📌 Purpose of This Repository
 
 This repository is used for:
-- Practising Git and GitHub fundamentals
+- Practising Git and GitHub collaboration
 - Creating and reviewing Pull Requests
-- Working with sprint documentation
-- Gradually improving project documentation over time
+- Writing and maintaining sprint documentation
+- Simulating real-world Scrum workflows
 
-At this stage, the repository focuses on **process and communication**, not full system implementation.
+The goal is to demonstrate professional development practices, not to deliver a
+complete application yet.
 
 ---
 
@@ -27,11 +57,19 @@ At this stage, the repository focuses on **process and communication**, not full
 
 ---
 
+### 📋 Prerequisites
+
+- Basic Git and GitHub knowledge
+- Understanding of Scrum concepts
+- Ability to read and edit Markdown files
+
 ## ⚙️ Installation
 
-This project does not require installation at this stage.
-
-Future iterations will introduce application code and setup instructions.
+1. Clone the repository
+2. Read this README to understand the project context
+3. Review sprint documents inside the `sprint-1` folder
+4. Make changes using a feature branch
+5. Submit changes via a Pull Request
 
 ---
 
@@ -50,12 +88,26 @@ Changes to this repository are made using **Pull Requests**.
 
 Contributors should:
 - Create a feature or documentation branch
-- Submit changes via a Pull Request
-- Clearly describe the intent of the change
+- Make focused and meaningful changes
+- Clearly describe the purpose of the Pull Request
+- Respond to review feedback before merging
+
+Direct commits to the `main` branch are avoided.
+
+---
+
+## Issue Tracking
+Issues are used to:
+- Report bugs or unclear behaviour
+- Suggest improvements or new features
+- Ask documentation-related questions
+
+Please use the available issue templates to ensure clear communication.
 
 ---
 
 ## Developer Onboarding (In Progress)
+
 - This project is developed incrementally as part of a Software training program. The purpose of this section is to help new contributors to understand 
 - What this system is intended to become
 - How documentation  is organised
@@ -65,21 +117,21 @@ Contributors should:
 ---
 ## System Context
 
-The conference Booking System is a conceptual system intended to manage:
-- Room Availability
+The Conference Room Booking System is a conceptual system intended to manage:
+- Room availability
 - Booking requests
 - Conflict prevention
-- Admnistration Oversight
-- etc..
+- Administration and reporting
+- Room maintenance scheduling
 
-At this stage, the system is documented through:
-- Sprint planning artefacts
+Currently, the system is documented through user stories and sprint artefacts.
 
 Implementation details will be added in later modules
 
 ## Project Documentation
+
 This repository contains sprint documentation created during Scrum Simulations:
-- `sprint-1\`- Sprint planning, execution and review artefacts
+- `sprint-1/`- Sprint planning, execution and review artefacts
 
 ## Upcoming Documentation
 
@@ -96,4 +148,5 @@ This project is licensed under the MIT License.
 
 ## ✍️ Author
 Thangi: onthangahomagoro@gmail.com
+
 Created as part of professional software development training.
