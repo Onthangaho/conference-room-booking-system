@@ -108,11 +108,40 @@ Please use the available issue templates to ensure clear communication.
 
 ## Developer Onboarding (In Progress)
 
-- This project is developed incrementally as part of a Software training program. The purpose of this section is to help new contributors to understand 
-- What this system is intended to become
-- How documentation  is organised
-- Where to find key project artefacts
--  What technologies will be used to develop this project?
+This project is developed incrementally as part of a software training programme.
+The purpose of this section is to help new contributors quickly understand the
+project direction, documentation structure, and collaboration expectations.
+
+### What This System Is Intended to Become
+The Conference Room Booking System is intended to support:
+- Booking and managing conference rooms
+- Preventing scheduling conflicts
+- Managing room capacity, equipment, and maintenance
+- Providing administrative oversight and reporting
+
+At this stage, the system is documented through user stories and sprint artefacts.
+Technical implementation will be introduced in later modules.
+
+### How Documentation Is Organised
+Project documentation is organised by sprint and artefact type:
+- User stories and epics describe system behaviour
+- Sprint artefacts document planning, execution, and review decisions
+- Documentation reflects the current state of understanding, not final design
+
+### Where to Find Key Project Artefacts
+Key documentation can be found in:
+- `user-stories.md` – Functional requirements
+- `epics.md` – High-level feature groupings
+- `priority-matrix.md` – Work prioritisation
+- `sprint-1/` – Sprint planning, daily standups, review, and retrospective files
+
+### Technologies (Planned)
+The following technologies are planned for future implementation:
+- Web-based application (technology stack to be confirmed)
+- RESTful APIs for booking and administration
+- Database for room and booking data
+
+Final technology decisions will be documented once implementation begins.
 
 ---
 ## System Context
