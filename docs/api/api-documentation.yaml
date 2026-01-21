@@ -1,0 +1,269 @@
+openapi: 3.0.4
+info:
+  title: Conference Room Booking API
+  description: >
+   This API allows employees and receptionist to manage conference rooms, create bookings, and check availability within the company.
+   It is designed as a formal contract between the API provider(backend) and consumers(frontend) teams, ensuring clearity without needing to read 
+   the implementation details(backend code).
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:5000
+    description: Local development server
+  - url: http://localhost:5001
+    description: staging server
+
+
+    
+
+components:
+
+  schemas: 
+    Room:
+      type: object
+      required: 
+        - id
+        - name
+        - capacity
+      properties: 
+        id:
+          type: string
+          example: 
+            - "1"
+        name:
+          type: string
+          description: Name of the conference room
+          minLength: 3
+          maxLength: 50
+          example: 
+            - "Boardroom A"
+        capacity: 
+          type: integer
+          description: Maximum number of people the room can hold
+          minimum: 1
+          maximum: 15
+          example: 
+            - 10
+
+    Booking:
+      type: object
+      required: 
+        - roomId
+        - date
+        - startTime
+        - endTime
+      properties: 
+        id:
+          type: integer
+        roomId:
+          type: integer
+          example: 
+            - 1
+        date:
+          type: string
+          format: date
+          description: Date of the booking
+          example: 
+            - "2026-02-01"
+        startTime:
+          type: string
+          format: time
+          description: Start time of the booking
+          example: 
+            - "09:00:00"
+
+        endTime:
+          type: string
+          format: time
+          description: End time of the booking
+          example: 
+            - "10:00:00"
+
+      
+
+    Error:
+      type: object
+      properties: 
+        message:
+          type: string
+          description: Error message
+          example: 
+            - Room not available for the selected time
+
+security:
+  - bearerAuth: []
+
+
+paths:
+  /rooms:
+    get:
+      summary: Get all conference rooms
+      description: Retrieve a list of all conference rooms available for booking.
+
+      responses:
+        '200':
+          description: A list of conference rooms
+          content: 
+            application/json: 
+              schema: 
+                type: array
+                items: 
+                  $ref: '#/components/schemas/Room'
+
+    post:
+      summary: Create a new conference room
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Room'
+      responses:
+        '201':
+          description: Room created successfully
+        '400':
+          description: Invalid room data
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+  /rooms/{roomId}:
+    get:
+      summary: Retrieve a room by its ID
+      parameters:
+        - name: roomId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Room details returned
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Room'
+        '404':
+          description: Room not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    
+    put: 
+      summary: Update a room by its ID
+      parameters:
+        - name: roomId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Room updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Room'
+        
+        '400':
+          description: Invalid room data
+        '404': 
+          description: Room not found
+       
+
+            
+
+        
+
+  
+  /bookings:
+    get:
+      
+      summary: Get all Booking
+      parameters:
+        
+        - in: query
+          name: roomId
+          required: true
+          schema:
+            type: integer
+            description: Filter bookings by room id
+        - in: query
+          name: date
+          schema: 
+            type: string
+            format: date 
+            description: Filter bookings by date
+      responses:
+        '200':
+          description: A list of bookings
+          content:
+            application/json: 
+              schema: 
+                type: array
+                items: 
+                  $ref: '#/components/schemas/Booking'
+      
+    post:
+      summary: Create a booking for a room
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Booking'
+      responses:
+        '201':
+          description: Booking created successfully
+        '409':
+          description: Booking conflict detected
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /bookings/{bookingId}:
+    delete:
+      summary: Cancel an existing booking
+      parameters:
+        - name: bookingId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Booking cancelled successfully
+        '403':
+          description: Cancellation not allowed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /availability:
+    get:
+      summary: Check room availability
+      parameters:
+        - in: query
+          name: roomId
+          required: true
+          schema: { type: integer }
+        - in: query
+          name: date
+          required: true
+          schema: { type: string, format: date }
+      responses:
+        '200':
+          description: Availability result
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  roomId: { type: integer }
+                  date: { type: string, format: date }
+                  available: { type: boolean }
+
